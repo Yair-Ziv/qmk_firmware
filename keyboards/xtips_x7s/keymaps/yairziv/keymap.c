@@ -11,7 +11,8 @@
 enum layers {
     _QWERTY,
     _SYM,
-    _NUM
+    _NUM,
+    _NAV
 };
 
 // EMPTY LAYER
@@ -53,6 +54,12 @@ KC_NO,       KC_SLSH, RSFT(KC_8),       LSFT(KC_4),       KC_NO,       /*||*/   
 LSFT(KC_1), LSFT(KC_2), LSFT(KC_3), LSFT(KC_4), LSFT(KC_5),        /*||*/               LSFT(KC_6), LSFT(KC_7), LSFT(KC_8),       LSFT(KC_9), LSFT(KC_0),
 KC_1, KC_2, KC_3, KC_4, KC_5,        /*||*/               KC_6, KC_7, KC_8,       KC_9, KC_0,
 KC_F1, KC_F2, KC_F3, KC_F4, KC_F5,        /*||*/               KC_F6, KC_F7, KC_F8,       KC_F9, KC_F10,
+                       KC_NO, KC_NO, KC_NO,      /*||*/     KC_NO,  KC_NO,  KC_NO
+),
+[_NAV] = LAYOUT_split_3x5_3(
+LGUI(KC_TAB),       KC_NO,       KC_NO,       KC_PGUP,       KC_NO,         /*||*/          KC_NO,    KC_NO,       KC_NO,       KC_NO,  KC_NO,
+LCTL(KC_TAB), KC_NO, KC_NO, KC_HOME, KC_NO,        /*||*/           KC_LEFT, KC_DOWN, KC_UP,       KC_RIGHT, KC_NO,
+KC_NO,       KC_NO, KC_NO,       KC_PGDN,       KC_NO,       /*||*/            KC_NO,    KC_PRINT_SCREEN,       KC_NO,    KC_NO,     KC_NO,
                        KC_NO, KC_NO, KC_NO,      /*||*/     KC_NO,  KC_NO,  KC_NO
 ),
 };
