@@ -48,3 +48,22 @@ KC_F1, KC_F2, KC_F3, KC_F4, KC_F5,        /*||*/               KC_F6, KC_F7, KC_
                        KC_NO, KC_NO, KC_NO,      /*||*/     KC_NO,  KC_NO,  KC_NO
 ),
 };
+
+
+/*
+* Combos
+*/
+const uint16_t PROGMEM fj_esc[] =        {KC_T, KC_Y, COMBO_END};
+// TODO: Make work later
+// const uint16_t PROGMEM yt_caps_word[] =  {KC_F, KC_J, COMBO_END};
+const uint16_t PROGMEM gh_dash[] =       {KC_G, KC_H, COMBO_END};
+const uint16_t PROGMEM bn_underscore[] = {KC_B, KC_N, COMBO_END};
+const uint16_t PROGMEM f4f5_f11[] = {KC_F4, KC_F5, COMBO_END};
+const uint16_t PROGMEM f6f7_f12[] = {KC_F6, KC_F7, COMBO_END};
+combo_t key_combos[] = {
+    COMBO(fj_esc, KC_ESC),
+    COMBO(gh_dash, KC_MINS),
+    COMBO(bn_underscore, LSFT(KC_MINS)),
+    COMBO(f4f5_f11, KC_F11),
+    COMBO(f6f7_f12, KC_F12),
+};
