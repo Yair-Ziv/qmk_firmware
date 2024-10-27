@@ -12,7 +12,8 @@ enum layers {
     _QWERTY,
     _SYM,
     _NUM,
-    _NAV
+    _NAV,
+    _SYS
 };
 
 // EMPTY LAYER
@@ -60,6 +61,12 @@ KC_F1, KC_F2, KC_F3, KC_F4, KC_F5,        /*||*/               KC_F6, KC_F7, KC_
 LGUI(KC_TAB),       XXXXXXX,       XXXXXXX,       KC_PGUP,       XXXXXXX,         /*||*/          XXXXXXX,    XXXXXXX,       XXXXXXX,       XXXXXXX,  KC_PRINT_SCREEN,
 LCTL(KC_TAB), XXXXXXX, XXXXXXX, KC_HOME, XXXXXXX,        /*||*/           KC_LEFT, KC_DOWN, KC_UP,       KC_RIGHT, XXXXXXX,
 XXXXXXX,       XXXXXXX, XXXXXXX,       KC_PGDN,       XXXXXXX,       /*||*/            XXXXXXX,    KC_PRINT_SCREEN,       XXXXXXX,    XXXXXXX,     XXXXXXX, // TODO: MOVE PRINT SCREEN FROM HERE
+                       XXXXXXX, XXXXXXX, XXXXXXX,      /*||*/     XXXXXXX,  XXXXXXX,  XXXXXXX
+),
+[_SYS] = LAYOUT_split_3x5_3(
+KC_MUTE,       KC_VOLU,       KC_VOLD,       KC_MNXT,       KC_MPRV,         /*||*/          XXXXXXX,    XXXXXXX,       XXXXXXX,       XXXXXXX,  XXXXXXX,
+XXXXXXX, XXXXXXX, XXXXXXX, KC_MPLY, KC_MSTP,        /*||*/           XXXXXXX,    XXXXXXX, XXXXXXX, XXXXXXX,       XXXXXXX,
+XXXXXXX,       XXXXXXX, XXXXXXX,       XXXXXXX,       XXXXXXX,       /*||*/            XXXXXXX,    XXXXXXX,       XXXXXXX,    XXXXXXX,     XXXXXXX,
                        XXXXXXX, XXXXXXX, XXXXXXX,      /*||*/     XXXXXXX,  XXXXXXX,  XXXXXXX
 ),
 };
